@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Arrivals | HerLuxury</title>
+    <title>New Arrivals | Her Luxury</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,19 +11,26 @@
     <header>
         <nav class="main-nav">
             <div class="logo">
-                <a href="main.html">HerLuxury</a>
+                <a href="main.html">Her Luxury</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="new-arrivals.html">New Arrivals</a></li>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="brands.html">Brands</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-icons">
-                <a href="#search"><i class="fas fa-search"></i></a>
-                <a href="#account"><i class="fas fa-user"></i></a>
-                <a href="#" id="cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+            <button class="burger-menu" aria-label="Toggle menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#search"><i class="fas fa-search"></i></a>
+                    <a href="#account"><i class="fas fa-user"></i></a>
+                    <a href="#" id="cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+                </div>
             </div>
         </nav>
     </header>
@@ -86,57 +93,69 @@
 
         <section class="new-arrivals-grid">
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x400" alt="New Designer Bag">
-                <div class="product-info">
-                    <h3>Louis Vuitton Neverfull MM</h3>
-                    <p class="price">₱125,830</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <a href="product-detail.html?product=lv-neverfull-mm">
+                    <img src="images/products/lv-neverfull/main.png" alt="Louis Vuitton Neverfull MM">
+                    <div class="product-info">
+                        <h3>Louis Vuitton Neverfull MM</h3>
+                        <p class="price">₱125,830</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x400" alt="New Designer Bag">
-                <div class="product-info">
-                    <h3>Chanel Classic Flap Medium</h3>
-                    <p class="price">₱295,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <a href="product-detail.html?product=chanel-flap-medium">
+                    <img src="images/products/chanel-flap/main.png" alt="Chanel Classic Flap Medium">
+                    <div class="product-info">
+                        <h3>Chanel Classic Flap Medium</h3>
+                        <p class="price">₱295,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x400" alt="New Designer Bag">
-                <div class="product-info">
-                    <h3>Hermès Birkin 30</h3>
-                    <p class="price">₱650,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <a href="product-detail.html?product=hermes-birkin-30">
+                    <img src="images/products/hermes-birkin/main.png" alt="Hermès Birkin 30">
+                    <div class="product-info">
+                        <h3>Hermès Birkin 30</h3>
+                        <p class="price">₱650,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x400" alt="New Designer Bag">
-                <div class="product-info">
-                    <h3>Gucci Dionysus Small</h3>
-                    <p class="price">₱85,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <a href="product-detail.html?product=gucci-dionysus-small">
+                    <img src="images/products/gucci-dionysus/main.png" alt="Gucci Dionysus Small">
+                    <div class="product-info">
+                        <h3>Gucci Dionysus Small</h3>
+                        <p class="price">₱85,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x400" alt="New Designer Bag">
-                <div class="product-info">
-                    <h3>Prada Re-Edition 2005</h3>
-                    <p class="price">₱75,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <a href="product-detail.html?product=prada-re-edition-2005">
+                    <img src="images/products/prada-re-edition/main.png" alt="Prada Re-Edition 2005">
+                    <div class="product-info">
+                        <h3>Prada Re-Edition 2005</h3>
+                        <p class="price">₱75,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
 
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x400" alt="New Designer Bag">
-                <div class="product-info">
-                    <h3>Fendi Baguette</h3>
-                    <p class="price">₱95,000</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <a href="product-detail.html?product=fendi-baguette">
+                    <img src="images/products/fendi-baguette/main.png" alt="Fendi Baguette">
+                    <div class="product-info">
+                        <h3>Fendi Baguette</h3>
+                        <p class="price">₱95,000</p>
+                    </div>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </section>
 
@@ -170,8 +189,8 @@
             <div class="footer-section">
                 <h4>Follow Us</h4>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/herluxury___/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61572307393582" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-pinterest"></i></a>
                 </div>
             </div>

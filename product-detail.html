@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail | Her Luxury</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="main.html">Her Luxury</a>
+            </div>
+            <button class="burger-menu" aria-label="Toggle menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#search"><i class="fas fa-search"></i></a>
+                    <a href="#account"><i class="fas fa-user"></i></a>
+                    <a href="#" id="cart-icon"><i class="fas fa-shopping-bag"></i><span class="cart-count">0</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- for cart items -->
+        </div>
+        <div class="cart-total">
+            Total: <span id="cart-total-amount">₱0</span>
+        </div>
+        <button class="checkout-button">Proceed to Checkout</button>
+    </div>
+
+    <main>
+        <section class="product-detail">
+            <div class="back-button-container">
+                <a href="new-arrivals.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="product-container">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="images/products/lv-neverfull/main.png" alt="Louis Vuitton Neverfull" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/products/lv-neverfull/thumbnail1.png" alt="Thumbnail 1" class="thumbnail active">
+                        <img src="images/products/lv-neverfull/thumbnail2.png" alt="Thumbnail 2" class="thumbnail">
+                        <img src="images/products/lv-neverfull/thumbnail3.png" alt="Thumbnail 3" class="thumbnail">
+                        <img src="images/products/lv-neverfull/thumbnail4.png" alt="Thumbnail 4" class="thumbnail">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 id="product-title">Louis Vuitton Neverfull MM</h1>
+                    <p class="product-brand" id="product-brand">Louis Vuitton</p>
+                    <p class="product-price" id="product-price">₱295,000</p>
+                    <div class="product-description">
+                        <h3>Description</h3>
+                        <p id="product-description">The Neverfull MM tote unites timeless design with heritage details. Made from supple Monogram canvas with 
+                            natural cowhide trim, it is roomy yet not bulky, with side laces that cinch for a sleek allure or loosen for a casual look. Slim, 
+                            comfortable handles slip easily over the shoulder or arm. Lined in colorful textile, it features a removable pouch which can be 
+                            used as a clutch or an extra pocket.</p>
+                    </div>
+                    <div class="product-details">
+                        <h3>Details</h3>
+                        <ul>
+                            <li><strong>Material:</strong> <span id="product-material">Leather</span></li>
+                            <li><strong>Dimensions:</strong> <span id="product-dimensions">31 x 28x 14 cm</span></li>
+                            <li><strong>Color:</strong> <span id="product-color">Monogram coated canvas</span></li>
+                            <li><strong>Condition:</strong> <span id="product-condition">New</span></li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="product-grid">
+                <!-- Related products -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>HerLuxury is your destination for authentic designer bags.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#shipping">Shipping</a></li>
+                    <li><a href="#returns">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HerLuxury. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
